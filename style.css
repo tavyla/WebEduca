@@ -1,0 +1,112 @@
+:root {
+    --cor-principal: #fdd2fd;
+    --cor-hover: #f3b5f3;
+    --cor-texto: #243047;
+    --cor-fundo: #f4f7fb;
+    --cor-branca: #ffffff;
+    --cor-foco: #a52a7a;
+    --espacamento: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+}
+
+header,
+footer {
+    padding: var(--espacamento);
+    text-align: center;
+    background-color: var(--cor-principal);
+}
+
+main {
+    width: min(90%, 760px);
+    margin: 2rem auto;
+}
+
+section {
+    padding: var(--espacamento);
+    background-color: var(--cor-branca);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+label,
+input,
+select,
+button {
+    display: block;
+    width: 100%;
+    margin-top: 0.75rem;
+}
+
+input,
+select,
+button {
+    padding: 0.8rem;
+    font: inherit;
+}
+
+button {
+    border: 0;
+    border-radius: 6px;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-hover);
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--cor-foco);
+    outline-offset: 2px;
+}
+
+#lista-cursos {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-cursos li {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    background-color: var(--cor-fundo);
+    border-left: 4px solid var(--cor-principal);
+    border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+    header,
+    footer {
+        padding: 1rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 1rem auto;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}

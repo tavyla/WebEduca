@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="WebEduca, um portal de cursos de tecnologia.">
+
+    <title>WebEduca - Cursos de Tecnologia</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>WebEduca</h1>
+        <p>Aprenda tecnologia de forma prática.</p>
+    </header>
+
+    <main>
+
+        <section aria-labelledby="sobre-titulo">
+            <h2 id="sobre-titulo">Sobre o WebEduca</h2>
+
+            <p>
+                O WebEduca é um projeto educacional desenvolvido
+                para apresentar cursos de tecnologia de maneira
+                simples e organizada.
+            </p>
+        </section>
+
+        <section aria-labelledby="cursos-titulo">
+
+            <h2 id="cursos-titulo">Pesquisar cursos</h2>
+
+            <form id="form-pesquisa">
+
+                <label for="curso">Nome do curso</label>
+
+                <input
+                    type="search"
+                    id="curso"
+                    name="curso"
+                    placeholder="Ex.: HTML">
+
+                <label for="categoria">Categoria</label>
+
+                <select id="categoria" name="categoria">
+                    <option value="todas">Todas as categorias</option>
+                    <option value="programacao">Programação</option>
+                    <option value="design">Design</option>
+                    <option value="dados">Banco de Dados</option>
+                </select>
+
+                <button type="submit">Pesquisar</button>
+
+            </form>
+
+            <p id="resultado" aria-live="polite"></p>
+
+            <h3>Cursos disponíveis</h3>
+
+            <ul id="lista-cursos"></ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>WebEduca - Projeto educacional.</p>
+    </footer>
+
+</body>
+</html>
